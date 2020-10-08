@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Open+sans:400,500&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #9b59b6;
+	font-family: 'open sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+.container{
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	width: 700px;
+	max-width: 100%;
+}
+.header{
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 20px 40px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.header h2{
+	margin: 0;
+}
+.form{
+	padding: 30px 40px;
+}
+.form-control .FName{
+	display: inline;
+	float: left;
+	width: 50%;
+}
+.form-control .LName{
+	display: inline;
+	width: 50%;
+}
+.form-control .FName input{
+	width: 80%;
+} 
+.form-control .LName input{
+	width: 43%;
+}
+.form-control{
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+ }
+.form-control label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-control input{
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control.success input{
+	border-color: #2ecc71;
+}
+.form-control.error input{
+	border-color: #e74c3c;
+}
+.form-control .FName i{
+	left: 222px;
+	visibility: hidden;
+}
+.form-control .LName i{
+	left: 550px;
+	visibility: hidden;
+}
+.form-control i{
+	position: absolute;
+	top: 35px;
+	right: 10px;
+ 	visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+	visibility: visible;
+	color: #2ecc71
+}
+.form-control.error i.fa-exclamation-circle{
+	visibility: visible;
+	color: #e74c3c
+}
+.form-control .FName small{
+	visibility: hidden;
+	top: 66px;
+}
+
+.form-control .LName small{
+	visibility: hidden;
+	top: 66px;
+	left: 310px;
+}
+.form-control small{
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.form-control.error small{
+	visibility: visible;
+	color: #e74c3c;
+}
+.form-control.success small{
+	visibility: visible;
+	color: #2ecc71
+}
+
+.form button{
+	background-color: #000;
+	border: 2px solid #000;
+	color: #fff;
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	font-family: inherit;
+	border-radius: 4px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+.form button{
+	text-decoration: none;
+	color: #fff;
+}
+.form button:hover{
+	background-color: #f0f0f0;
+	color: #000;
+}
