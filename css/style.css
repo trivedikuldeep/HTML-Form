@@ -45,9 +45,11 @@ body{
 }
 .form-control .FName input{
 	width: 80%;
+	outline: none;
 } 
 .form-control .LName input{
 	width: 80%;
+	outline: none;
 }
 #names{
 	display: flex;
@@ -70,6 +72,7 @@ body{
 	font-size: 14px;
 	padding: 10px;
 	width: 100%;
+	outline: none;
 }
 
 .form-control.success input{
