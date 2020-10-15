@@ -41,17 +41,21 @@ body{
 .form-control .LName{
 	display: inline;
 	width: 50%;
+	float: right;
 }
 .form-control .FName input{
 	width: 80%;
 } 
 .form-control .LName input{
-	width: 43%;
+	width: 80%;
+}
+#names{
+	display: flex;
 }
 .form-control{
 	margin-bottom: 10px;
 	padding-bottom: 20px;
-	position: relative;
+	/* position: relative; */
  }
 .form-control label{
 	display: block;
@@ -75,18 +79,32 @@ body{
 	border-color: #e74c3c;
 }
 .form-control .FName i{
-	left: 222px;
-	visibility: hidden;
+	left: 592px;
+	top: 133px;
+	position: absolute;
+	/* visibility: visible; */
 }
 .form-control .LName i{
-	left: 550px;
-	visibility: hidden;
-}
-.form-control i{
+	left: 903px;
+	top: 133px;
 	position: absolute;
-	top: 35px;
-	right: 10px;
- 	visibility: hidden;
+	visibility: visible;
+}
+.i1 i{
+	position: absolute;
+	top: 240px;
+	right: 370px;
+ 
+}
+.i2 i{
+	position: absolute;
+	right: 370px;
+	bottom: 84px;
+}
+.i3 i{
+	position: absolute;
+	bottom: -9px;
+	right: 370px;
 }
 .form-control.success i.fa-check-circle{
 	visibility: visible;
@@ -96,18 +114,30 @@ body{
 	visibility: visible;
 	color: #e74c3c
 }
-.form-control .FName small{
-	visibility: hidden;
+
+#small1{
+	font-size: smaller;
 	top: 66px;
+	display: block;
 }
 
-.form-control .LName small{
-	visibility: hidden;
+#small2{
+	font-size: smaller;
+	display: block;
+	margin-left: auto;
 	top: 66px;
 	left: 310px;
 }
+.i2 small{
+	top: 555px;
+	margin-left: 362px
+}
+.i3 small{
+	top: 648px;
+	margin-left: 362px
+}
 .form-control small{
-	visibility: hidden;
+	visibility: visible;
 	position: absolute;
 	bottom: 0;
 	left: 0;
